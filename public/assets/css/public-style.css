@@ -1,0 +1,120 @@
+.plate-customizer-app-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* For responsiveness */
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.plate-customizer-sidebar {
+    flex: 1;
+    min-width: 300px; /* Minimum width for sidebar */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.plate-customizer-preview-area {
+    flex: 2; /* Preview area larger */
+    min-width: 400px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#plate-preview-canvas {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    background-color: #fff;
+}
+
+#plate-preview-summary {
+    margin-top: 15px;
+    font-size: 0.9em;
+    width: 100%;
+}
+#plate-preview-summary ul {
+    list-style: none;
+    padding: 0;
+}
+#plate-preview-summary li {
+    margin-bottom: 5px;
+}
+
+
+.plate-customizer-send-form {
+    flex-basis: 100%; /* Full width on new line */
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+.control-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.control-group select,
+.control-group input[type="text"],
+.control-group input[type="email"],
+.control-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.control-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+.swatch-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.swatch-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    min-width: 40px; /* For color-only swatches */
+    text-align: center;
+}
+.swatch-button img {
+    max-width: 50px;
+    max-height: 30px;
+    display: block;
+}
+.swatch-button.active {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+#send-form-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .plate-customizer-app-wrapper {
+        flex-direction: column;
+    }
+    .plate-customizer-sidebar,
+    .plate-customizer-preview-area {
+        flex: auto; /* Reset flex grow/shrink for column layout */
+    }
+}
