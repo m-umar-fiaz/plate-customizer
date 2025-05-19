@@ -1,11 +1,8 @@
 <?php
 /**
  * Plugin Name:       Plate Customizer
- * Plugin URI:        https://yourwebsite.com/plate-customizer
  * Description:       Allows users to customize plates with various options and preview them live.
  * Version:           1.0.2 // Incremented version
- * Author:            Your Name
- * Author URI:        https://yourwebsite.com
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       plate-customizer
